@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="flow">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1.0" />
+		<!-- <link rel="shortcut icon"href="img/nl-favicon.png"/> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<title>Tanishq</title>
+		<style>
+			.load-wraper{
+				background-color: #000;
+				position: fixed;
+				inset:0;
+			}
+			body{
+				background-color: #fff;
+			}  
+			.render-blk{ opacity:0; }
+			.only-mob{
+				display: none;
+			}
+			@media screen and (max-width: 767px) {
+			.only-desk{
+				display: none;
+			}
+			.only-mob{
+				display: block;
+			}
+			}
+		</style>
+	</head>
+	<body class="flow">
+		<div class="load-wraper"></div>
+		<div class="render-blk">
+			<div class="banner">
+				<div class="desk-banner-blk">
+					<img src="images/banner-bg.png">
+					<div class="target-palce"></div>
+					<div class="banner-elements-con">
+						<div class="banner-elements frame">
+							<img src="images/frame.png">
+						</div>
+						<div class="banner-elements model">
+							<img class="light-model" src="images/model.png" />
+							<svg width="100vw" height="100vh">
+							    <clippath id="clip" >
+							        <circle cx="50" cy="50" r="50" class="a"/>
+							    </clippath>
+							    <image xlink:href="images/dark.png" width="100vw" height="100vh" x="0" y="0"   class="one"/>
+							   	<image xlink:href="images/dark.png" width="100vw" height="100vh" x="0" y="0" clip-path="url(#clip)"/>
+						  	</svg>
+						</div>
+						<div class="banner-elements jewellery">
+							<img src="images/jewellery.png">
+						</div>
+						<div class="banner-elements logo">
+							<img src="images/logo.png">
+						</div>
+					</div>
+				</div>
+				<div class="mob-banner-blk">
+					<div class="mob-banner-img">	
+						<img class="light-on" src="images/mob-light.png">
+						<img class="light-off" src="images/mob-lightoff.png">
+						<img class="back-bg" src="images/back-bg.png">
+						<img class="mob-banner-bg" src="images/mob-banner-bg.png">
+					</div>
+				</div>
+				<div class="banner-text">
+					<div class="collection-text">
+						<div class="text-center fadein-text">
+							<h4>A collection that celebrates<br/>the festival we call life.</h4>
+						</div>
+					</div>
+					<div class="white-text fade-text">
+						<div class="text-center">
+							<h3>Tap the diya to bring alive the #FestivalOfLife</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="intro-section">
+				<div class="img-sblk neck">
+					<img src="images/necklace.png">
+				</div>
+				<div class="container">
+					<div class="intro-blk">
+						<div class="img-blk">
+							<img class="only-desk" src="images/shape.png">
+							<img class="only-mob" src="images/shape-mob.png">
+						</div>
+						<div class="img-sblk long">
+							<img src="images/long-earrings.png">
+						</div>
+						<div class="img-sblk studs">
+							<img src="images/studs.png">
+						</div>
+						<div class="content-blk">
+							<p>As we mark the beginning of another year, we carry within our hearts moments of the past and the shine of the future. But it's the glorious today that makes the canvas of life a celebration.</p>
+							<p>Our newest collection captures the joy of togetherness, the triumphant smile of friendship, the courage of the heart and the determination to keep going.</p>
+							<p>Embellished with the love of classic and the fusion of new, these magnificent pieces stand as a reminder to celebrate the #FestivalOfLife with Utsaah.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video-section">
+				<div class="bg-layer left">
+					<img src="images/video-left.png">
+				</div>
+				<div class="bg-layer right">
+					<img src="images/video-right.png">
+				</div>
+				<div class="container">
+					<div class="text-center mb-5">
+						<h2>Celebrating the #FestivalOfLife</h2>
+					</div>
+					<div class="row-d">
+						<div class="coll-md-9 mx-auto">
+							<div class="video-layer">
+								<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="450" src="https://www.youtube.com/embed/KzVQ_nY2M9k" loading="lazy" width="100%" id="player"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="collection">
+					<div class="text-center pb-4">
+						<h2>Our Utsaah Collection</h2>
+						<h4>A celebration of life with the mordern - classic.</h4>
+					</div>
+					<div class="collection-frame">
+						<div class="container">
+							<div class="row-d">
+								<div class="coll-6">
+									<div class="model-card">
+										<img src="images/model-1.png">
+										<div class="model-content">
+											<p>An intricate karigari of rubies and gold that weaves together the strands of tradition and modernity, reminding us of living life as it were a festival.</p>
+										</div>
+									</div>
+								</div>
+								<div class="coll-6">
+									<div class="model-card">
+										<img src="images/model-2.png">
+										<div class="model-content">
+											<p>This beautiful silhouette of gold casts its shadow on the celebration of today. As these motifs of regality marry the stories of past with the new. </p>
+										</div>
+									</div>
+								</div>
+								<div class="coll-6">
+									<div class="model-card">
+										<img src="images/model-3.png">
+										<div class="model-content">
+											<p>A stunning geometrical symphony that celebrates the splendor of this minimalistic craft, creating a rich mosaic of beauty.</p>
+										</div>
+									</div>
+								</div>
+								<div class="coll-6">
+									<div class="model-card">
+										<img src="images/model-4.png">
+										<div class="model-content">
+											<p>This canvas of cascading gems gracefully dance within the folds of gold, celebrating the beautiful #FestivalOfLife</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+			</section>
+			<section class="rangoli">
+				<img src="images/bg2.png">
+				<div class="image-set">
+					<img src="images/shape-and-diya.png">
+					<div class="image-set-logo">
+						<img src="images/necklace2.png">
+						<img src="images/tanishq-logo.png">
+					</div>
+				</div>
+				<div class="content-blk">
+					<div class="draw-content">
+						<h2>Draw a shape you'll love to see</h2>
+						<h2>on your jewellery</h2>
+						<h3><span class="play-games">Next >></span></h3>
+					</div>
+					<div class="draw-count-content">
+						<h2>Ready to create your karigari?</h2>
+						<h2><span class="num-count"></span></h2>
+					</div>
+				</div>
+				<div class="canvas-blk image-set">
+					<canvas id="sig-canvas" width="500" height="500">
+					Get a better browser, bro.
+					</canvas>
+					<!-- <canvas id="sig-canvas" width="500px" height="500px"></canvas>	 -->
+					<img class="circle" src="images/circle.png">
+					<img class="square" src="images/square.png">
+					<img class="hexagon" src="images/hexagon.png">
+				</div>
+			</section>
+			<section class="product">
+				<div class="product-blk">
+					<div class="container">
+						<div class="row-d nobefore">
+							<div class="coll-5">
+								<div class="content-blk">
+									<h2>Celebrate your today with these modern - classic trends</h2>
+								</div>
+							</div>
+						</div>
+						<div class="row-d move-down right">
+							<div class="coll-6">
+								<div class="with-short">
+									<img src="images/product-1.png">
+									<div class="short-img">
+										<img src="images/studs1.png">
+									</div>	
+								</div>
+							</div>
+							<div class="coll-6">
+								<div class="content-blk">
+									<h3>Wear your today in style</h3>
+									<p>Our new collection is crafted to celebrate the beauty of life. Every magnificent piece of jewellery is embellished and layered with rich motifs of our heritage. Weaving together the mosaic of our culture with the minimalism of modernity.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row-d align-items-end move-top left">
+							<div class="coll-6">
+								<div class="content-blk">
+									<h3>Layers of Opulence</h3>
+									<p>The #FestivalOfLife honors the tradition of past and the fusion of new just like the new Diwali style trend of layering your jewellery. A light, radiant choker sits elegantly across the neck as a magnificent bold motiffed haar adds a glorious shine to the ensemble.</p>
+								</div>
+							</div>
+							<div class="coll-6">
+								<img src="images/product-2.png">
+							</div>
+						</div>
+						<div class="row-d move-down right">
+							<div class="coll-6">
+								<img src="images/product-3.png">
+							</div>
+							<div class="coll-6">
+								<div class="content-blk">
+									<h3>Magic of Minimal</h3>
+									<p>Utsaah is a special collection that takes us back to the magic of simplicity.</p>
+									<p>These classic, minimal pieces of jewellery embellish our celebration of today. A style that captures the true craftsmanship of our being.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row-d align-items-end move-top left">
+							<div class="coll-6">
+								<div class="content-blk">
+									<h3>Shaping the #FestivalOfLife</h3>
+									<p>Our collection is inspired by the beautiful geometry of life. As these bold shapes embellish the curves of this karigari, every gem weaves together a story crafted to celebrate the joy of life.</p>
+								</div>
+							</div>
+							<div class="coll-6">
+								<img src="images/product-4.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="model-image mb-4 mb-md-0">
+				<img src="images/model-image.png">
+			</div>
+			<div class="container">
+				<div class="btn-blk mb-5 pb-5">
+					<a href="javascript:void(0);" class="button">View Collection</a>
+					<div class="d-flex">
+						<a href="javascript:void(0);" class="button mr-2">Visit the store</a>
+						<a href="javascript:void(0);" class="button ml-2">Book appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
+
