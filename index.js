@@ -35,19 +35,58 @@
         $('body,html').removeClass('flow');
     });
     $('.play-games').on('click', function() {
+        $('.end-layout').removeClass('active');
+        $('.canvas-blk img').removeClass('active done');
         $('.draw-content').hide();
         $('.draw-count-content').fadeIn();
         var count = 3;
         var counting = setInterval(function() {
-            console.log(count);
             var text = count != 0 ? count : "Go";
             $('.num-count').text(text);
-            count-- || (clearInterval(counting),$('.draw-count-content, .image-set-logo').fadeOut(1000),$('.canvas-blk, .canvas-blk .circle').fadeIn(1000));
+            count-- || (clearInterval(counting),$('.draw-count-content, .image-set-logo').fadeOut(1000),$('.canvas-blk, .canvas-blk .circle').fadeIn(1000),$('.canvas-blk, .canvas-blk .circle').addClass('active'));
             // var text = (count1 == 0) ? 'Go': count1;
         }, 1000)
+        sequnce();        
     });
 
-
+function sequnce() {
+    setTimeout(function () {
+            $('.help-text').fadeIn();
+            $('.help-text').find('h4').html('Nice! </br> Try another shape?');
+        },18000)
+        setTimeout(function () {
+            clearCanvas();
+            $('.help-text').fadeOut();
+            if (!$('.canvas-blk .circle').hasClass('done')) {
+                $('.canvas-blk .circle').addClass('done');
+                $('.canvas-blk .square').addClass('active');
+            }
+        },20000)
+        setTimeout(function () {
+            clearCanvas();
+            $('.help-text').fadeOut();
+             if (!$('.canvas-blk .square').hasClass('done')) {
+                $('.canvas-blk .square').addClass('done');
+                $('.canvas-blk .hexagon').addClass('active');
+            }
+        }, 30000);
+        setTimeout(function () {
+            $('.help-text').fadeIn();
+            $('.help-text').find('h4').html('Oh we like that.<br/> Try another?');
+        },28000)
+        setTimeout(function () {
+            clearCanvas();
+            $('.help-text').fadeOut();
+            if (!$('.canvas-blk .hexagon').hasClass('done')) {
+                $('.canvas-blk .hexagon').addClass('done');
+                $('.end-layout').addClass('active');
+            }
+        }, 40000);
+        setTimeout(function () {
+            $('.help-text').fadeIn();
+            $('.help-text').find('h4').html('Pretty! <br/>Want to see the jewellery<br/>inspired by your karigari?');
+        },38000)
+}
 
 // function touchHandler(e) {
 //     "use strict";
@@ -217,8 +256,8 @@
 
 var canvas = document.getElementById("sig-canvas");
 var ctx = canvas.getContext("2d");
-ctx.strokeStyle = "#222222";
-ctx.lineWith = 2;
+ctx.strokeStyle = "#fff";
+ctx.lineWidth = 10;
 
 
 var drawing = false;
@@ -327,4 +366,8 @@ document.body.addEventListener("touchmove", function (e) {
 
 function clearCanvas() {
     canvas.width = canvas.width;
+    ctx.strokeStyle = "#fff";
+    ctx.lineWidth = 10;
 }
+
+        
