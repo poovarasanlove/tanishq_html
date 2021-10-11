@@ -53,7 +53,7 @@ function sequnce() {
     setTimeout(function () {
             $('.help-text').fadeIn();
             $('.help-text').find('h4').html('Nice! </br> Try another shape?');
-        },18000)
+        },12000)
         setTimeout(function () {
             clearCanvas();
             $('.help-text').fadeOut();
@@ -61,7 +61,7 @@ function sequnce() {
                 $('.canvas-blk .circle').addClass('done');
                 $('.canvas-blk .square').addClass('active');
             }
-        },20000)
+        },15000)
         setTimeout(function () {
             clearCanvas();
             $('.help-text').fadeOut();
@@ -69,11 +69,11 @@ function sequnce() {
                 $('.canvas-blk .square').addClass('done');
                 $('.canvas-blk .hexagon').addClass('active');
             }
-        }, 30000);
+        }, 25000);
         setTimeout(function () {
             $('.help-text').fadeIn();
             $('.help-text').find('h4').html('Oh we like that.<br/> Try another?');
-        },28000)
+        },23000)
         setTimeout(function () {
             clearCanvas();
             $('.help-text').fadeOut();
@@ -81,11 +81,11 @@ function sequnce() {
                 $('.canvas-blk .hexagon').addClass('done');
                 $('.end-layout').addClass('active');
             }
-        }, 40000);
+        }, 35000);
         setTimeout(function () {
             $('.help-text').fadeIn();
             $('.help-text').find('h4').html('Pretty! <br/>Want to see the jewellery<br/>inspired by your karigari?');
-        },38000)
+        },33000)
 }
 
 // function touchHandler(e) {

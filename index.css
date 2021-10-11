@@ -568,6 +568,11 @@ body.flow,html.flow{
   width: 50%;
   margin-left: 39%;
 }
+.rangoli h2{
+  font-size: 52px;
+  line-height: 60px;
+  padding-bottom: 10px;
+}
 .rangoli{
   position: relative;
 }
