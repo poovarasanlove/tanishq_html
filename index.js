@@ -87,7 +87,14 @@ function sequnce() {
             $('.help-text').find('h4').html('Pretty! <br/>Want to see the jewellery<br/>inspired by your karigari?');
         },33000)
 }
-
+   $(window).on('load resize', function() {
+    var winwid = $(window).width();
+    console.log(winwid);
+    if (winwid < 1200) {
+        $('#sig-canvas').attr('width', winwid);
+        clearCanvas();
+    }   
+   });
 // function touchHandler(e) {
 //     "use strict";
 
@@ -346,23 +353,47 @@ function getTouchPos(canvasDom, touchEvent) {
     y: touchEvent.touches[0].clientY - rect.top
   };
 }
+// var body = document.getElementsByTagName("body");
+
+window.addEventListener('touchmove', ev => {
+  if (ev.target == canvas) {
+    ev.preventDefault();
+    ev.stopImmediatePropagation();
+  };
+}, { passive: false });
 
 
-document.body.addEventListener("touchstart", function (e) {
-  if (e.target == canvas) {
-    e.preventDefault();
-  }
-}, false);
-document.body.addEventListener("touchend", function (e) {
-  if (e.target == canvas) {
-    e.preventDefault();
-  }
-}, false);
-document.body.addEventListener("touchmove", function (e) {
-  if (e.target == canvas) {
-    e.preventDefault();
-  }
-}, false);
+
+// document.body.addEventListener("touchstart", function (e) {
+//     // if (body.isSwipe(canvas) && e.target) {
+//     //    e.preventDefault();
+//     //    e.stopPropagation();
+//     //    swiping = true;
+//     // }
+//   if (e.target == canvas) {
+//     e.preventDefault();
+//   }
+// }, false);
+// document.body.addEventListener("touchend", function (e) {
+//   // if (body.isSwipe(canvas) && e.target) {
+//   //      e.preventDefault();
+//   //      e.stopPropagation();
+//   //      swiping = true;
+//   //   }
+//   if (e.target == canvas) {
+//     e.preventDefault();
+//   }
+// }, false);
+// document.body.addEventListener("touchmove", function (e) {
+//     if (e.target == canvas) {
+//     e.preventDefault();
+//   }
+//   // if (body.isSwipe(canvas) && e.target) {
+//   //      e.preventDefault();
+//   //      e.stopPropagation();
+//   //      swiping = true;
+//   //   }
+// }, false);
 
 function clearCanvas() {
     canvas.width = canvas.width;

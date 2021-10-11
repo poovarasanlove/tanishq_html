@@ -654,12 +654,33 @@ body.flow,html.flow{
   transform: translate(-50%,-50%);
   z-index: 4;
 }
+.buy-now-blk{
+  max-width: 54%;
+  margin: -2% auto 2%;
+  justify-content: space-between;
+  display: flex;
+}
+.play-games{
+  cursor: pointer;
+}
 @media screen and (max-width: 1199px) {
+  .canvas-blk img, .help-text{
+    max-width: 40%;
+  }
   .container{
     max-width: 100%;
   }
 }
 @media screen and (max-width: 1099px) {
+  .rangoli h2{
+    font-size: 15px;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  .rangoli h3{
+    font-size: 13px !important;
+    line-height: 15px !important;
+  }
   .intro-section .img-sblk.neck{
     max-width: 170px;
     left: -100px;
@@ -745,6 +766,18 @@ body.flow,html.flow{
   }
 }
 @media screen and (max-width: 767px) {
+  .buy-now-blk a{
+    font-size: 8px;
+    line-height: 8px;
+  }
+  .rangoli-btn-blk{
+    max-width: 80%;
+  }
+  .rangoli-btn-blk .button {
+    font-size: 8px;
+    padding: 0 0 5px;
+    border-width: 1px;
+  }
   p{
     padding-bottom: 10px;
   }
@@ -855,7 +888,7 @@ body.flow,html.flow{
   }
   .mb-md-0, .my-md-0 {
     margin-bottom: 0!important;
-  }
+  }  
 }
 @media screen and (max-width: 325px) {
  .product-blk .move-top{
