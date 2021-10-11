@@ -765,14 +765,20 @@ body.flow,html.flow{
     width: 150%;
   }
 }
+@media screen and (max-width: 768px) {
+.rangoli-btn-blk{
+    max-width: 80%;
+  }
+}
 @media screen and (max-width: 767px) {
+  .buy-now-blk {
+    max-width: 58%;
+  }
   .buy-now-blk a{
     font-size: 8px;
     line-height: 8px;
   }
-  .rangoli-btn-blk{
-    max-width: 80%;
-  }
+  
   .rangoli-btn-blk .button {
     font-size: 8px;
     padding: 0 0 5px;
