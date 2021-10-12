@@ -576,6 +576,9 @@ body.flow,html.flow{
 .rangoli{
   position: relative;
 }
+.rangoli .end-layout .content-blk{
+  top: 36%;
+}
 .rangoli .content-blk{
   position: absolute;
   top: 60%;
@@ -654,9 +657,18 @@ body.flow,html.flow{
   transform: translate(-50%,-50%);
   z-index: 4;
 }
+.buy-now-blk a{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.buy-now-blk .button{
+  padding: 5px 0 13px;
+  margin-top: 10px;
+}
 .buy-now-blk{
   max-width: 54%;
-  margin: -2% auto 2%;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
   display: flex;
 }
@@ -771,14 +783,31 @@ body.flow,html.flow{
   }
 }
 @media screen and (max-width: 767px) {
+  .diya-desk-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .canvas-blk img, .help-text {
+      max-width: 60%;
+  }
   .buy-now-blk {
-    max-width: 58%;
+    max-width: 70%;
+    flex-wrap: wrap;
   }
   .buy-now-blk a{
+    flex:0 0 28%;
     font-size: 8px;
     line-height: 8px;
   }
-  
+  .rangoli .end-layout .content-blk {
+      top: 26%;
+  }
+ .rangoli .mob-shape{
+  position: relative;
+ }
   .rangoli-btn-blk .button {
     font-size: 8px;
     padding: 0 0 5px;
