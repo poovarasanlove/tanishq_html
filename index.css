@@ -790,6 +790,13 @@ body.flow,html.flow{
     left: 0;
     top: 0;
   }
+  .rangoli .image-set-logo img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .end-layout .image-set img{
+    top: 10%;
+  }
   .canvas-blk img, .help-text {
       max-width: 60%;
   }
