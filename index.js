@@ -65,7 +65,7 @@ function circle() {
     setTimeout(function () {
         $('.help-text').find('h4').html('Nice! </br> Try another shape?');
         $('.help-text').fadeIn();
-    },5000)
+    },6500)
     setTimeout(function () {
         clearCanvas();
         $('.help-text').fadeOut();
@@ -75,13 +75,13 @@ function circle() {
         }
         $('#sig-canvas').removeClass('circle-draw disabel-circle');
         $('#sig-canvas').addClass('square-draw');
-    },7000)
+    },8000)
 };
 function square() {
         setTimeout(function () {
             $('.help-text').find('h4').html('Oh we like that.<br/> Try another?');
             $('.help-text').fadeIn();
-        },5000)
+        },6500)
         setTimeout(function () {
             $('.help-text').fadeOut();
              if (!$('.canvas-blk .square').hasClass('done')) {
@@ -91,13 +91,13 @@ function square() {
             $('#sig-canvas').removeClass('square-draw disabel-square');
             $('#sig-canvas').addClass('hexa-draw');
             clearCanvas();
-        }, 7000);
+        }, 8000);
 }
 function hexa() {
 setTimeout(function () {
             $('.help-text').find('h4').html('Pretty! <br/>Want to see the jewellery<br/>inspired by your karigari?');
             $('.help-text').fadeIn();
-        },5000)
+        },6500)
 setTimeout(function () {
         $('.help-text').fadeOut();
         if (!$('.canvas-blk .hexagon').hasClass('done')) {
@@ -106,7 +106,7 @@ setTimeout(function () {
         }
         $('#sig-canvas').removeClass('hexa-draw disabel-hexa');
         clearCanvas();
-    }, 7000);
+    }, 8000);
 }
    $(window).on('load', function() {
     var winwid = $(window).width();
