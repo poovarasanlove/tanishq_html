@@ -99,14 +99,14 @@ setTimeout(function () {
             $('.help-text').fadeIn();
         },6500)
 setTimeout(function () {
-        $('.help-text').fadeOut();
+        $('.help-text').fadeOut(0);
         if (!$('.canvas-blk .hexagon').hasClass('done')) {
             $('.canvas-blk .hexagon').addClass('done');
             $('.end-layout').addClass('active');
         }
         $('#sig-canvas').removeClass('hexa-draw disabel-hexa');
         clearCanvas();
-    }, 8000);
+    }, 10000);
 }
    $(window).on('load', function() {
     var winwid = $(window).width();
