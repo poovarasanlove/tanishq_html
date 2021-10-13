@@ -87,7 +87,7 @@ function sequnce() {
             $('.help-text').find('h4').html('Pretty! <br/>Want to see the jewellery<br/>inspired by your karigari?');
         },33000)
 }
-   $(window).on('load resize', function() {
+   $(window).on('load', function() {
     var winwid = $(window).width();
     console.log(winwid);
     if (winwid < 1200) {
@@ -95,6 +95,14 @@ function sequnce() {
         clearCanvas();
     }   
    });
+   // var width = $(window).width();
+// $(window).on('resize', function() {
+//   if ($(this).width() !== width && width < 1200) {
+//     width = $(this).width();
+//     $('#sig-canvas').attr('width', width);
+//     clearCanvas();
+//   }
+// });
 // function touchHandler(e) {
 //     "use strict";
 
