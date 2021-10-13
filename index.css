@@ -635,16 +635,16 @@ body.flow,html.flow{
 }
 .canvas-blk .circle.active{
   opacity: 1;
-  transition: 1s;
+  /*transition: 1s;*/
 }
 .canvas-blk .square.active,.canvas-blk .hexagon.active{
   display: block;
   opacity: 1;
-  transition: 1s 1s;
+  /*transition: 1s 1s;*/
 }
 .canvas-blk .circle.done,.canvas-blk .square.done,.canvas-blk .hexagon.done{
   opacity: 0;
-  transition: 1s 1s;
+  /*transition: 1s 1s;*/
   z-index: -1;
 }
 .canvas-blk{
@@ -797,7 +797,10 @@ body.flow,html.flow{
   .end-layout .image-set img{
     top: 10%;
   }
-  .canvas-blk img, .help-text {
+  .help-text {
+      max-width: 40%;
+  }
+  .canvas-blk img {
       max-width: 60%;
   }
   .buy-now-blk {
