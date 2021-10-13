@@ -726,7 +726,7 @@ body.flow,html.flow{
 }
 @media (orientation: portrait) {
   .banner-text{
-    bottom: 0;
+    bottom: 35px;
   }
   .fadein-text{
     display: none;
