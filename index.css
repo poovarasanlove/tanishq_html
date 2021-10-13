@@ -185,7 +185,7 @@ border-color: #FFFACF;
 }
 .intro-blk .img-blk{
   position: absolute;
-  inset:0;
+  top:0;left:0;right:0;bottom:0;
 }
 .intro-section{
   padding-top: 50px;
@@ -266,7 +266,7 @@ border-color: #FFFACF;
 .desk-banner-blk:before{
   content: '';
   position: absolute;
-  inset:0;
+  top:0;left:0;right:0;bottom:0;
   background: black;
 }
 .target-palce{
@@ -391,7 +391,7 @@ body.flow,html.flow{
   content: '';
   display: block;
   position: absolute;
-  inset:0;
+  top:0;left:0;right:0;bottom:0;
   background: url('images/maroon-bg.png');
   background-position: center;
   background-size: 100% 100%;
@@ -502,7 +502,7 @@ body.flow,html.flow{
 .mob-banner-blk:before{
   content: '';
   position: absolute;
-  inset:0;
+  top:0;left:0;right:0;bottom:0;
   z-index: 4;
   background: black;
   opacity: .8;
@@ -779,7 +779,7 @@ body.flow,html.flow{
 }
 @media screen and (max-width: 768px) {
 .rangoli-btn-blk{
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -815,8 +815,17 @@ body.flow,html.flow{
  .rangoli .mob-shape{
   position: relative;
  }
+  .rangoli-btn-blk {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+  }
   .rangoli-btn-blk .button {
-    font-size: 8px;
+    flex: 0 0 45%;
+
+  }
+  .rangoli .button {
+    font-size: 10px;
     padding: 0 0 5px;
     border-width: 1px;
   }
